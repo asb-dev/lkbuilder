@@ -12,7 +12,7 @@ currentkernel=$(expr match "$currentkernel" '.*\([0-9]\+\.[0-9]\+\.[0-9]\+\)')
 cpucores=$(nproc)
 
 # you can specify here your kernel config file
-config=$(/boot/config-`uname -r`)
+config=/boot/config-`uname -r`
 
 # check new kernel version
 if [ "$newkernel" != "$currentkernel" ];
